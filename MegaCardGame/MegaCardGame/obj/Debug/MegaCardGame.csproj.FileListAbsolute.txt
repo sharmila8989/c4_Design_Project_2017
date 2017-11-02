@@ -1,0 +1,6 @@
+C:\Users\sharm\Desktop\home work\MegaCardGame\MegaCardGame\bin\Debug\MegaCardGame.exe.config
+C:\Users\sharm\Desktop\home work\MegaCardGame\MegaCardGame\obj\Debug\MegaCardGame.csprojResolveAssemblyReference.cache
+C:\Users\sharm\Desktop\home work\MegaCardGame\MegaCardGame\obj\Debug\MainWindow.g.cs
+C:\Users\sharm\Desktop\home work\MegaCardGame\MegaCardGame\obj\Debug\App.g.cs
+C:\Users\sharm\Desktop\home work\MegaCardGame\MegaCardGame\obj\Debug\MegaCardGame_MarkupCompile.cache
+C:\Users\sharm\Desktop\home work\MegaCardGame\MegaCardGame\obj\Debug\MegaCardGame_MarkupCompile.lref

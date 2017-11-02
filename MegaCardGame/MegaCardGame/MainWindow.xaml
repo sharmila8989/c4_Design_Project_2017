@@ -1,0 +1,80 @@
+﻿<Window x:Class="MegaCardGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MegaCardGame"
+        mc:Ignorable="d"
+        Title="Mega Card Game-Home" Height="350" Width="525" Background="BurlyWood" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <DockPanel>
+            <Frame x:Name="_NavigationFrame" NavigationUIVisibility="Hidden" />
+        </DockPanel>
+        
+        <Label Grid.Row="0" Grid.ColumnSpan="3" Width="300" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" x:Name="gameTitleLabel" >Mega Card Game 2000</Label>
+        <Label Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" FontSize="8" x:Name="gameInstructionLabel">Select a Player Class</Label>
+        <Button Grid.Row="2" Grid.Column="1" Width="50" Height="15" FontSize="8" x:Name="startGameButton" IsEnabled="False" Click="startGameButton_Click">Start Game</Button>
+        <Image x:Name="warriorImage" Grid.Row="3" Grid.Column="0" Width="50" Height="70" Stretch="Fill">
+            <Image.Source>
+                <BitmapImage UriSource="/Images/thiefImage.jpg" />
+            </Image.Source>
+        </Image>
+        <Image x:Name="thiefImage" Grid.Row="3" Grid.Column="1" Width="50" Height="70" Stretch="Fill">
+            <Image.Source>
+                <BitmapImage UriSource="/Images/warriorImage.jpg" />
+            </Image.Source>
+        </Image>
+        <Image x:Name="mageImage" Grid.Row="3" Grid.Column="2" Width="50" Height="70" Stretch="Fill">
+            <Image.Source>
+                <BitmapImage UriSource="/Images/mageImage.jpeg" />
+            </Image.Source>
+        </Image>
+        <TextBlock x:Name="warriorTextBlocK" Grid.Row="4" Grid.Column="0" Width="60" Height="60" FontSize="5" TextWrapping="Wrap">
+            <LineBreak/>
+            <Bold>Bersek</Bold><LineBreak/>
+            <LineBreak/>
+            - has 1 in 3 sucess rate<LineBreak/>
+            - If fails warrior take no action<LineBreak/>
+            - If successful does 3X Damage
+        </TextBlock>
+        <TextBlock x:Name="thiefTextBlocK" Grid.Row="4" Grid.Column="1" Width="60" Height="60" FontSize="5" TextWrapping="Wrap">
+             <LineBreak/>
+            <Bold>Backstab</Bold><LineBreak/>
+            <LineBreak/>
+            - has 1 in 3 sucess rate<LineBreak/>
+            - If fails thief does 0.5 normal damage<LineBreak/>
+            - If successful does 2X  normal Damage  
+        </TextBlock>
+        <TextBlock x:Name="mageTextBlocK" Grid.Row="4" Grid.Column="2" Width="60" Height="60" FontSize="5" TextWrapping="Wrap">
+             <LineBreak/>
+            <Bold>Fireball</Bold><LineBreak/>
+            <LineBreak/>
+            - has 1 in 2 sucess rate<LineBreak/>
+            - If fails fireball backfires and does 1X normal damage to mage<LineBreak/>
+            - If successful does 4X  normal Damage
+            
+        </TextBlock>
+        <Button x:Name="warriorButton" Grid.Row="5" Grid.Column="0" Width="50" Height="15" FontSize="8" Click="warriorButton_Click">Warrior</Button>
+        <Button x:Name="thiefButton" Grid.Row="5" Grid.Column="1" Width="50" Height="15" FontSize="8" Click="thiefButton_Click">Thief</Button>
+        <Button x:Name="mageButton" Grid.Row="5" Grid.Column="2" Width="50" Height="15" FontSize="8" Click="mageButton_Click">Mage</Button>
+
+
+
+
+
+
+    </Grid>
+</Window>
